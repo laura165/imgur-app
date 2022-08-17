@@ -26,6 +26,8 @@
     position: static;
     padding: 10px 0px 20px 0px !important;
     .results {
+      display: flex;
+      flex-direction: row !important;
       .iconsStyle {
         transform: rotate(-90deg);
       }
