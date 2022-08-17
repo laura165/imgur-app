@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## NOTE
+
+I had some issues with imgur API it didn't work with localhost i would get the error that "Imgur is over the capacity", so i used a different approach and use ngrok in case of localhost. If you get the same error as me use ngrok in case of localhost.
+
 ## Available Scripts
 
 In the project directory, you can run:
