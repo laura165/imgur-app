@@ -1,0 +1,40 @@
+.dropDownWrapper {
+  background-color: transparent;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  display: flex;
+}
+
+.dropDownHeader {
+  color: #acbed8;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  .iconsStyle {
+    margin-left: 30px;
+  }
+}
+.listContainer {
+  position: absolute;
+  z-index: 4;
+  min-width: 100px;
+  max-width: 100px;
+  .list {
+    .listItem {
+      padding-left: 10px;
+      padding-bottom: 10px;
+      color: #acbed8;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 26px;
+      cursor: pointer;
+      background-color: #121420;
+      &:hover {
+        color: white;
+        background-color: #1b2432 !important;
+      }
+    }
+  }
+}

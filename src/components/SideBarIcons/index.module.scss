@@ -1,0 +1,88 @@
+//sidebar icons wrapper
+.iconsWrapper {
+  position: fixed;
+  z-index: 3;
+  margin-left: -10px;
+  @media only screen and (max-width: 992px) {
+    margin-left: -40px;
+  }
+  @media only screen and (max-width: 768px) {
+    // position: absolute;
+  }
+  @media only screen and (max-width: 600px) {
+    // position: absolute;
+    margin-left: 0;
+    top: 0;
+    margin-top: 40px;
+    display: flex;
+    padding: 0 !important;
+    flex-direction: row;
+    height: auto;
+    width: 85%;
+    margin-left: 10px;
+    align-items: center;
+  }
+  @media only screen and (max-width: 576px) {
+    position: static;
+    padding: 10px 0px 20px 0px !important;
+    .results {
+      .iconsStyle {
+        transform: rotate(-90deg);
+      }
+    }
+    .numberResult {
+      text-align: center;
+      white-space: nowrap;
+      width: 80px !important;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      color: #acbed8 !important;
+    }
+  }
+  padding: 250px 0 150px 0;
+  bottom: 100px;
+  // background-color: #1b2432;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  .results {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    .iconsStyle {
+      color: #acbed8;
+    }
+    .eyeStyle {
+      color: #acbed8;
+    }
+  }
+  .numberResult {
+    text-align: center;
+    white-space: nowrap;
+    width: 50px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #acbed8 !important;
+  }
+  .iconsStyleLeft {
+    width: 25px;
+    height: 25px;
+    color: #acbed8;
+  }
+  // .buttonStyle {
+  //   color: white;
+  //   font-size: 16px;
+  //   line-height: 22px;
+  //   font-weight: 600;
+  //   background-color: transparent;
+  //   border: 1px solid white;
+  //   border-radius: 10px;
+  //   padding: 10px;
+  //   cursor: pointer;
+  //   &:hover {
+  //     background-color: white;
+  //     color: #1b2432;
+  //   }
+  // }
+}

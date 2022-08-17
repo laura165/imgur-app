@@ -1,0 +1,17 @@
+.container {
+  padding-top: 70px;
+}
+
+.wrap {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  .chechBoxWrapper {
+    margin-top: 15px;
+
+    input {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
