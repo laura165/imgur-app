@@ -11,7 +11,6 @@ export default function SinglePost() {
   const params = useParams();
   // state too gather the response fromt the api
   const [singleData, setSingleData] = useState([]);
-  console.log(singleData);
   const isVideo = singleData.type === "video/mp4";
   console.log(singleData);
   useEffect(() => {

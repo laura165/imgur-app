@@ -6,19 +6,19 @@ import ImageWrapper from "../ImageWrapper";
 import DropDown from "../DropdownComponent";
 import axios from "axios";
 import { useEffect, useState } from "react";
-
+// sort parameters
 const SORT_OPTIONS = [
   { name: "Viral", key: "viral" },
   { name: "Top", key: "top" },
   { name: "Time", key: "time" },
 ];
-
+// section parameters
 const SECTION_OPTIONS = [
   { name: "Hot", key: "hot" },
   { name: "Top", key: "topSection" },
   { name: "User", key: "user" },
 ];
-
+// window parameters
 const WINDOW_OPTIONS = [
   { name: "Day", key: "day" },
   { name: "Week", key: "week" },
@@ -33,12 +33,10 @@ export default function ImageContent() {
   const [window, setWindow] = useState(WINDOW_OPTIONS[0]);
   const [images, setImages] = useState([]);
   const [checked, setChecked] = useState(false);
-  console.log(images);
-
+  // handles toggling between states to exclude/include viralimages onChange of checkbox
   const handleToggle = () => {
     setChecked(!checked);
   };
-
   useEffect(() => {
     axios
       .get(
@@ -86,12 +84,7 @@ export default function ImageContent() {
           </div>
           <div className={`col-lg-3 ${style.wrap} col-md-2 col-sm-1 col-1`}>
             <div className={`${style.chechBoxWrapper}`}>
-              <input
-                type="checkbox"
-                name="checkbox"
-                onChange={handleToggle}
-                checked={images.in_most_viral}
-              />
+              <input type="checkbox" name="checkbox" onChange={handleToggle} />
             </div>
           </div>
         </div>

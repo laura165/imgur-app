@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## NOTE
 
-I had some issues with imgur API it didn't work with localhost i would get the error that "Imgur is over the capacity", so i used a different approach and use ngrok in case of localhost. If you get the same error as me use ngrok in case of localhost.
+I had some issues with imgur API it didn't work with localhost i would get the error that "Imgur is over the capacity", so i used a different approach and used ngrok that solved the issue. If you get the same error as me use ngrok instead of localhost.
 
 ## Available Scripts
 

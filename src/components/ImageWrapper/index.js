@@ -4,7 +4,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 
 export default function ImageContent({ imageData }) {
+  // if array exists grabs the first child else  returns imageData, imageData is a props from imageContent
   const mainData = imageData.images ? imageData.images[0] : imageData;
+  // checks if data is a video or no
   const isVideo = mainData.type === "video/mp4";
   return (
     <Link to={`/singlePost/${mainData.id}`}>
